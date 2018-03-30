@@ -1,3 +1,13 @@
+.dropdown-menu {
+  transition: all 0.2s ease-in-out;
+  display: block !important;
+  opacity: 0;
+  visibility: hidden; }
+  .dropdown-menu.show {
+    display: block !important;
+    opacity: 1;
+    visibility: visible; }
+
 body {
   overflow-x: hidden;
   background-color: #fefefe; }

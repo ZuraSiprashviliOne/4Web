@@ -1,6 +1,18 @@
 
 @import "variables";
 
+.dropdown-menu{
+    transition: $transition-base;
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    &.show{
+        display: block !important;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 body{
     overflow-x: hidden;
     background-color: #fefefe;

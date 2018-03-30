@@ -1,0 +1,61 @@
+body {
+  overflow-x: hidden;
+  background-color: #fefefe; }
+  body header .navbar {
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.05); }
+    body header .navbar #navbar-collapse-data .nav-item {
+      display: block;
+      border-bottom: 5px solid transparent;
+      transition: all 0.2s ease-in-out; }
+      body header .navbar #navbar-collapse-data .nav-item.active, body header .navbar #navbar-collapse-data .nav-item:hover {
+        border-bottom: 5px solid #f00; }
+  body header .header-swiper-container {
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 5px solid #f00; }
+    body header .header-swiper-container .swiper-wrapper {
+      background-color: rgba(18, 46, 67, 0.5); }
+      body header .header-swiper-container .swiper-wrapper .swiper-slide > .container > .row > div {
+        transition: 1s;
+        opacity: 0; }
+      body header .header-swiper-container .swiper-wrapper .swiper-slide .card {
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        margin-bottom: -200px; }
+        @media only screen and (max-width: 992px) {
+          body header .header-swiper-container .swiper-wrapper .swiper-slide .card {
+            margin-bottom: auto; } }
+        body header .header-swiper-container .swiper-wrapper .swiper-slide .card .card-body {
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05); }
+      body header .header-swiper-container .swiper-wrapper .swiper-slide-active .card {
+        opacity: 1;
+        visibility: visible; }
+      body header .header-swiper-container .swiper-wrapper .swiper-slide-active > .container > .row > div {
+        opacity: 1; }
+  body main .block .block-title {
+    border-bottom: 5px solid rgba(108, 117, 125, 0.5); }
+  body main .latest .c-item.news {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.05); }
+  body footer {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    body footer .border-bottom, body footer .border-top {
+      border-color: rgba(255, 255, 255, 0.5) !important; }
+    body footer a {
+      text-decoration: none !important; }
+    body footer .cover {
+      background-color: rgba(0, 0, 0, 0.5); }
+    body footer .search input::placeholder {
+      color: #fff; }
+    body footer .search .form-control {
+      position: relative; }
+    body footer .search .fa {
+      margin-left: -40px; }
+
+/*# sourceMappingURL=style.css.map */

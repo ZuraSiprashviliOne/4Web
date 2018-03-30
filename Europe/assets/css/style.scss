@@ -1,0 +1,124 @@
+
+@import "variables";
+
+body{
+    overflow-x: hidden;
+    background-color: #fefefe;
+    header{
+        .navbar{
+            box-shadow: 0 0 15px 3px rgba($black, 0.05);
+
+            #navbar-collapse-data{
+                .nav-item{
+                    display: block;
+                    border-bottom: 5px solid transparent;
+                    transition: $transition-base;
+                    &.active{
+                        border-bottom: 5px solid $danger;
+                    }
+                    &:hover{
+                        @extend .active;
+                    }
+                }
+            }
+        }
+
+        .header-swiper-container{
+            position: relative;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-bottom: 5px solid $danger;
+            .swiper-wrapper{
+                background-color: rgba($info, 0.5);
+
+                .swiper-slide{
+                    >.container{
+                        >.row{
+                            >div{
+                                transition: 1s;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    .card{
+                        transition: $transition-base;
+                        opacity: 0;
+                        visibility: hidden;
+                        margin-bottom: -200px;
+                        @media only screen and (max-width: $lg){
+                            margin-bottom: auto;
+                        }
+                        .card-body{
+                            box-shadow: 0 0 5px 1px rgba($black, 0.05);
+                            // position: absolute;
+                            // left: 0;
+                            // right: 0;
+                            // z-index: 100;
+                            // bottom: -100px;
+                        }
+                    }
+                    
+                    &-active{
+                        .card{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        >.container{
+                            >.row{
+                                >div{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .block{
+            .block-title{
+                border-bottom: 5px solid rgba($text-muted, .5);
+            }
+        }
+        .latest{
+            .c-item.news{            
+                box-shadow: 0 0 15px 5px rgba($black, 0.05);
+            }
+        }
+    }
+
+    footer{
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        .border-bottom, .border-top{
+            border-color: rgba($white, 0.5) !important;
+        }
+
+        a{
+            text-decoration: none !important;
+        }
+        .cover{
+            background-color: rgba($black, .5);
+        }
+
+        .search{
+            input::placeholder{
+                color: $white;
+            }
+            .form-control{
+                position: relative;
+            }
+            .fa{
+                margin-left: -40px
+            }
+
+        }
+    }
+}
